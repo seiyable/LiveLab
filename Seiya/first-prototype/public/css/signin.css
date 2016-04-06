@@ -1,0 +1,30 @@
+/*
+ * Base structure
+ */
+
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+  padding-top: 50px;
+  padding-bottom: 40px;
+  background-color: #eee;
+}
+
+/*
+ * Top navigation
+ * Hide default border to remove 1px line.
+ */
+.navbar-fixed-top {
+  border: 0;
+}
+
+
+.button-wrapper {
+  max-width: 330px;
+  padding: 15px;
+  padding-top: 150px;
+  margin: 0 auto;
+}
+
+.button-wrapper>button {
+  margin: 50px 0;
+} 

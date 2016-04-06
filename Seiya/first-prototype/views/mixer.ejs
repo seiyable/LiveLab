@@ -9,7 +9,7 @@
     <meta name="author" content="Seiyable">
     <!-- <link rel="icon" href="../../favicon.ico"> -->
 
-    <title><%= title %></title>
+    <title>Mixing Room</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -44,44 +44,20 @@
           </button>
           <a class="navbar-brand" href="/">CultureHub RTCMixer</a>
         </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a id="username" href="#">Logging in as Seiyable</a></li>
-            <li><a href="/">Home</a></li>
-            <li><a href="/mixer">Mixer</a></li>
-            <li><a href="#">Settings</a></li>
-            <li><a href="#">Help</a></li>
-          </ul>
-        </div>
       </div>
     </nav>
 
     <div class="container-fluid">
       <div class="row">
-        <div class="col-sm-3 col-md-2 sidebar">
-          <ul class="nav nav-sidebar">
-            <li class="active"><a href="#">Overview <span class="sr-only">(current)</span></a></li>
-            <li><a href="#">Reports</a></li>
-            <li><a href="#">Analytics</a></li>
-            <li><a href="#">Export</a></li>
-          </ul>
-          <div>
-            <h3 class="sub-header">Chat</h3>
-            <div class="chat-holder"></div>
-            <form class= "chat-form" action="#">
-              <input class="chat-textfield" type="text" name="chattext">
-              <input class="chat-submit" type="submit" value="Send">
-            </form>
-          </div>
-
-        </div>
-        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-          <h1 class="page-header">Mixer</h1>
-
+        <div class="col-sm-9 col-md-10 main">
+          <h1 class="page-header">Room Name</h1>
           <div class="row placeholders">
             <div class="col-xs-6 col-sm-3 placeholder">
               <h3>Studio 1</h3>
-              <img class="img-holder" src="img/rectangle.png">
+              <video id="studio-1" class="stream-video" muted></video>
+              <!-- <input type="text" value="other peer id" id="opeerid"> -->
+              <!-- <input type="button" value="Make Call" onclick="makeCall(document.getElementById('opeerid').value);" >
+ -->              <!-- <img class="img-holder" src="img/rectangle.png"> -->
               <img class="img-holder" src="img/rectangle.png">
               <div class="table-responsive">
                 <table class="table table-bordered">
@@ -213,6 +189,22 @@
             </div>
           </div>
         </div>
+        <div class="col-sm-3 col-md-2 sidebar">
+          <div>
+            <h3 class="sub-header">Audience Screen</h3>
+            <div>
+              <p>Only selected video and audio streams are output to your audience.</p>
+              <button type="button" class="btn btn-primary">Open Screen</button>
+            </div>
+
+            <h3 class="sub-header">Chat with Peers</h3>
+            <div class="chat-holder"></div>
+            <form class= "chat-form" action="#">
+              <input class="chat-textfield" type="text" name="chattext">
+              <input class="chat-submit" type="submit" value="Send">
+            </form>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -226,5 +218,7 @@
     <script src="js/holder.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <!-- <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script> -->
+    <script src="js/peer.min.js"></script> 
+    <script src="js/peerConnectionHandler.js"></script>
   </body>
 </html>

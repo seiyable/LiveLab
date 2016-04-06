@@ -43,7 +43,7 @@ body {
     position: fixed;
     top: 51px;
     bottom: 0;
-    left: 0;
+    right: 0;
     z-index: 1000;
     display: block;
     padding: 20px;
@@ -134,4 +134,11 @@ div.placeholder {
   border-width: 1px;
   border-color: #d3d3d3;
   border-style: solid;
+}
+
+video.stream-video{
+  display: block;
+  width: 100%;
+  /*height: 240px;*/
+  margin-bottom: 15px;
 }

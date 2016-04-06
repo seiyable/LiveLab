@@ -12,6 +12,9 @@
     "ejs": "~2.3.3",
     "express": "~4.13.1",
     "morgan": "~1.6.1",
-    "serve-favicon": "~2.3.0"
+    "serve-favicon": "~2.3.0",
+    "peer": "^0.2.8",
+    "https": "^1.0.0",
+    "mongodb": "^2.1.14"
   }
 }
