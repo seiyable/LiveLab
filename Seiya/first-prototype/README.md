@@ -1,6 +1,7 @@
 # LiveLab
 
-To test this prototype locally:  
+To test this prototype locally:
+
 1. Install mongo DB to your computer  
   [https://docs.mongodb.org/manual/tutorial/install-mongodb-on-os-x/](https://docs.mongodb.org/manual/tutorial/install-mongodb-on-os-x/)
 
